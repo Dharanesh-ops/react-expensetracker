@@ -1,0 +1,130 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.exp-container{
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.form{
+    display: block;
+}
+
+.input{
+    width: 400px;
+    height: 40px;
+
+}
+
+.text{
+    font-weight: 900;
+}
+.amount{
+    padding:10px 0;
+
+}
+.button{
+    background-color:#4A86E8;
+    color:'white';
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+}
+.button:hover {background-color: #7998c9}
+.button:active {
+    background-color: #7998c9;
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+  }
+
+.expenseText{
+    font-size: large;
+    font-weight: 900;
+    color: white;
+}
+
+.balance{
+    box-shadow: 1px 5px 8px 5px #eee;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.line{
+    border-left: 2px solid green;
+    height: 140px;
+    margin-left: -3px;
+}
+
+.history{
+    box-shadow: 0px 0px 0px 3px #eee;
+    margin-Top:20px;
+    border: 15px;
+}
+.list{
+    
+    list-style-type: none;
+    display: inline;
+}
+
+.money{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.moreMoney{
+    color:green;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+@media only screen and (max-width: 500px) {
+    .input{
+        width: 100%;
+        height: 40px;
+    }
+    .money{
+        font-size: 18px;
+    }
+    .moreMoney{
+        font-size: 25px;
+    }
+    .amount{
+        padding: 0;
+    }
+    .line{
+        border-left: 2px solid green;
+        height: 80px;
+        margin-left: -3px;
+        position: relative;
+        top: 15px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .input{
+        width: 100%;
+        height: 40px;
+    }
+    .money{
+        font-size: 16px;
+    }
+    .moreMoney{
+        font-size: 20px;
+    }
+    .exp-container{
+        padding: 0 20px;
+    }
+    .line{
+        border-left: 2px solid green;
+        height: 80px;
+        margin-left: -3px;
+        position: relative;
+        top: 10px;
+    }
+   
+}
